@@ -6,11 +6,14 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
+import UserAvatar from "./UserAvatar"
   
 const UserButton = () => {
   return (
     <DropdownMenu>
-  <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+  <DropdownMenuTrigger>
+    <UserAvatar name="Diogo Ramos" image='https://github.com/shadcn.png' />
+  </DropdownMenuTrigger>
   <DropdownMenuContent>
     <DropdownMenuLabel>My Account</DropdownMenuLabel>
     <DropdownMenuSeparator />
