@@ -7,6 +7,8 @@ function CheckoutButton() {
 
   const createCheckoutSession = async () => {
     if (!session) return;
+
+    
   }
 
   return ( 
