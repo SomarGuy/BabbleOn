@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import ClientProviders from '@/components/ClientProviders'
 import FirebaseAuthProvider from '@/components/FirebaseAuthProvider'
+import SubscriptionProvider from '@/components/SubscriptionProvider'
 
 export const metadata: Metadata = {
   title: 'BabbleOn',
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex flex-col min-h-screen">
         <FirebaseAuthProvider>
+        <SubscriptionProvider>
 
         <ThemeProvider
             attribute="class"
@@ -31,6 +33,7 @@ export default function RootLayout({
 
         {children}
         </ThemeProvider>
+        </SubscriptionProvider>
         </FirebaseAuthProvider>
         </body>
     </html>
