@@ -21,7 +21,7 @@ function CheckoutButton() {
       cancel_url: window.location.origin,
     })
 
-    return onSnapshot(docRef, snap => {
+    return onSnapshot(docRef, (snap) => {
       const data = snap.data();
       const url = data?.url;
       const error = data?.error;
