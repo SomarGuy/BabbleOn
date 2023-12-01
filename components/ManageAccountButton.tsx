@@ -1,7 +1,12 @@
+import { generatePortalLink } from "@/actions/generatePortalLink"
+
+
 function ManageAccountButton() {
   return (
-    <div>ManageAccountButton</div>
-  )
+  <form action={generatePortalLink}>
+    <button type="submit">Manage Billing</button>
+  </form>
+  );
 }
 
 export default ManageAccountButton
