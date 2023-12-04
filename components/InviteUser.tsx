@@ -30,7 +30,7 @@ import { getUserByEmailRef } from "@/lib/converters/User";
 import { useToast } from "@/components/ui/use-toast";
 import useAdminId from "@/hooks/useAdminId";
 import { PlusCircleIcon } from "lucide-react";
-// import { ShareLink } from "./ShareLink";
+import { ShareLink } from "./ShareLink";
 import { useSubscriptionStore } from "@/store/store";
 import { ToastAction } from "./ui/toast";
 import { useRouter } from "next/navigation";
@@ -188,11 +188,11 @@ function InviteUser({ chatId }: { chatId: string }) {
           </DialogContent>
         </Dialog>
 
-        {/* <ShareLink
+        <ShareLink
           isOpen={openInviteLink}
           setIsOpen={setOpenInviteLink}
           chatId={chatId}
-        /> */}
+        />
       </>
     )
   );
