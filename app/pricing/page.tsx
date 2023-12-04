@@ -39,7 +39,7 @@ export default async function PricingPage() {
         </div>
       </div>
 
-      <div className="flow-root bg-white pb-24 sm:pb-32">
+      <div className="flow-root bg-transparent pb-24 sm:pb-32">
         <div className="-mt-80">
           <PricingCards redirect={true} />
         </div>
