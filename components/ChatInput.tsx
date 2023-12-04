@@ -120,7 +120,7 @@ function ChatInput({ chatId }: { chatId: string }) {
               </FormItem>
             )}
           />
-          <Button type="submit" className="bg-violet-600 text-white">
+          <Button type="submit" className="bg-blue-600 text-white">
             Send
           </Button>
         </form>
